@@ -1,0 +1,41 @@
+.shaif{
+    position: absolute;
+    z-index: 1000;
+    left: -30%;
+    top: 15%;
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .container-shaif{
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .break{
+        display: block !important;
+        height: 100px;
+    }
+}
+.landing{
+    padding: 30px;
+}
+.content{
+    display: grid ;
+    justify-content: center;
+    height: 90%;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+.content h2{
+    line-height: 89.03px;
+    font-size: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.content p{
+    line-height: 26px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 50px;
+}

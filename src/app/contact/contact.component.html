@@ -1,0 +1,37 @@
+<section class="contact-us">
+<h1 class="main-title2 text-center mb-5 mt-3" >CONTACT US</h1>
+<div class="contact-container">
+    <form class="contact-form" (ngSubmit)="submitRejister(registerForm)" [formGroup]="registerForm">
+    <input class="bg-input" type="text" placeholder="Full Name" formControlName='full_name' id="full_name" required>
+    <div *ngIf="registerForm.get('full_name')?.errors && registerForm.get('full_name')?.touched" class="alert alert-danger my-2">
+        <p *ngIf="registerForm.get('full_name')?.errors?.['required']" class="mb-0">full_name is required</p>
+        <p *ngIf="registerForm.get('full_name')?.errors?.['minlength']" class="mb-0">full_name minLength is 3</p>
+        <p *ngIf="registerForm.get('full_name')?.errors?.['maxlength']" class="mb-0">full_name maxLength is 8</p>
+    </div>
+    <input class="bg-input" type="email" placeholder="Email" formControlName="email" id="email" required>
+    <div *ngIf="registerForm.get('email')?.errors && registerForm.get('email')?.touched" class="alert alert-danger my-2">
+        <p *ngIf="registerForm.get('email')?.errors?.['required']" class="mb-0">email is required</p>
+        <p *ngIf="registerForm.get('email')?.errors?.['email']" class="mb-0">email invalid</p>
+    </div>
+    <input class="bg-input" type="tel" placeholder="Phone Number" formControlName="phone_number" id="phone_number" required>
+    <div *ngIf="registerForm.get('phone_number')?.errors && registerForm.get('phone_number')?.touched" class="alert alert-danger my-2">
+        <p *ngIf="registerForm.get('phone_number')?.errors?.['required']" class="mb-0">phone_number is required</p>
+        <p *ngIf="registerForm.get('phone_number')?.errors?.['pattern']" class="mb-0">phone_number invalid</p>
+        <p *ngIf="registerForm.get('phone_number')?.errors?.['maxlength']" class="mb-0">phone_number maxLength is 11</p>
+    </div>
+    <button [disabled]="registerForm.invalid" type="submit">SEND</button>
+    </form>
+    <div class="contact-info ms-5 mt-5"> 
+    <p class="mb-3">
+        <span class="text-main"><i class="fas fa-envelope"></i></span>
+        <a href="mailto:upskilling-eg1@gmail.com">upskilling-eg1&gmail.com</a>
+    </p>
+    <p>
+        <span class="text-main"><i class="fas fa-phone main-color"></i></span>
+        +20 115 493 2137
+    </p>
+    </div>
+</div>
+</section>
+<section class="footer">
+</section>

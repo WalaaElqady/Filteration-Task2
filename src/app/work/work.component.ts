@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-work',
+  templateUrl: './work.component.html',
+  styleUrls: ['./work.component.scss']
+})
+export class WorkComponent {
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth'});
+}
+}
+}

@@ -1,0 +1,114 @@
+.section1{
+    background-image: url('../../assets/img/Mask Group.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+    .section1{
+        display: none;
+    }
+}
+.section2{
+    background-image: url('../../assets/img/Mask Group0.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 27%;
+    height: 142px;
+    position: absolute;
+    z-index: 45;
+    left: 0;
+    bottom: 0;
+}
+@media (max-width: 999px) {
+    .section2{
+        width: 100%;
+    }
+}
+.links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+@media (max-width: 999px) {
+    .links ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+        height: 100%;
+    }
+}
+.links ul li{
+    list-style: none;
+}
+@media (max-width: 999px) {
+    .links ul li{
+        font-size: 40px;
+        padding: 10px;
+    }
+}
+.links ul li i{
+    color: #C98A40; 
+    padding: 8px;
+}
+.landing{
+    height: 100vh;
+}
+.landing .pragragh{
+    position: absolute;
+    left: 28%;
+    bottom: 0;
+    margin: 0;
+    z-index: 100000;
+}
+@media (max-width: 999px) {
+    .landing .pragragh{
+        display: none;
+    }
+}
+.content{
+    display: grid ;
+    justify-content: center;
+    height: 85%;
+}
+@media (max-width: 999px) {
+    .content{
+        height: 80%;
+    }
+}
+@media (max-width: 767px) {
+    .content{
+        height: 70%;
+    }
+}
+.content h3{
+    margin-top: 15px;
+    margin-left: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.content h2{
+    line-height: 89.03px;
+    font-size: 74px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+@media (max-width: 999px) {
+    .content h2{
+        font-size: 60px;
+    }
+}
+@media (max-width: 767px) {
+    .content h2{
+        font-size: 50px;
+    }
+}
+.content p{
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+}

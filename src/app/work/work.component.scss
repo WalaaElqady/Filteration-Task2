@@ -1,0 +1,102 @@
+.section1{
+    background-image: url('../../assets/img/Mask Group1.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+    .section1{
+        display: none;
+    }
+}
+.text{
+    display: none;
+}
+@media (max-width: 767.88px) {
+    .text {
+        color: #fff;
+        font-weight: 600;
+        display: block;
+        font-size: 18px;
+        width: 70%;
+        text-align: center;
+        margin: 50px auto;
+    }
+}
+.landing{
+    height: 100vh;
+}
+.pragragh2{
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    right: 20px;
+    color: #C98A40;
+    font-weight: 600;
+}
+@media (max-width: 1020px) {
+    .pragragh2{
+        width: 80%;
+        right: 30px;
+    }
+}
+.content h3{
+    text-align:end;
+    margin-top: 60px;
+    width: 70%;
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+@media (max-width: 1020px) {
+    .content h3{
+        font-size: 80px;
+    }
+}
+@media (max-width: 825px) {
+    .content h3{
+        font-size: 70px;
+    }
+}
+@media (max-width: 767px) {
+    .gallary{
+        display: none;
+    }
+}
+
+@media (max-width: 567px) {
+    .gallary{
+        right: 0;
+    }
+}
+@media (max-width: 489px) {
+    .content h3{
+        font-size: 44px;
+    }
+}
+.main-bottom{
+    text-align: center;
+    margin-top: 30px;
+    background-color: #FDBA10;
+    width: 190px;
+    height: 60px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+@media (max-width: 999px) {
+    .main-bottom{
+        margin-top: 50px;
+        width: 140px;
+        height: 40px;
+    }
+}
+.main-bottom a{
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-bottom:hover{
+    background-color: #ffb25a87;
+}
